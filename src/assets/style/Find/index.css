@@ -1,0 +1,260 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{border: none;vertical-align: middle;}
+html,body{
+    height: 100%;
+}
+/*html{*/
+/*    font-size: 26.67vw;*/
+/*}*/
+body {
+    display: flex;
+    flex-direction: column;
+    /*font-size: .16rem;*/
+}
+/*#nav{*/
+/*     width:100%;*/
+/*     height: 3000px;*/
+/*     !*background: #ccc;*!*/
+/* }*/
+#top{
+    width:80%;
+    height:100px;
+    /*background: red;*/
+    margin:0 auto
+}
+#Nav{
+    width:90%;
+    height: 150px;
+    background: #fff;
+    margin:0 auto;
+    border-radius: 10px;
+}
+/*.slider am-carousel{*/
+/*    border-radius: 10px;*/
+/*}*/
+#swiper{
+    margin-top:20px
+}
+
+
+#navtwo{
+    margin-top:20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #ccc;
+}
+#navtwo>a{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+#navtwo .iconfont{
+    color:red;
+    font-size: 30px;
+}
+#navtwo a{
+    color:#000
+}
+
+#songlist{
+    width:100%;
+    height: 300px;
+}
+#songlist>div{
+    width:100%;
+    height:20px;
+    margin-top:10px;
+}
+#songlist>div>span:nth-child(1){
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 20px;
+    margin-left:35px;
+}
+#songlist>div>input{
+    display: block;
+    float:right;
+    margin-right:40px;
+    line-height: 20px;
+    border:1px solid #ccc;
+    border-radius: 8px;
+    font-size: 12px;
+    width:60px;
+    text-align: center;
+}
+#songlist #songphoto{
+    width:300px;
+    height:200px;
+    /*background: #000;*/
+    margin:10px auto;
+}
+#songlist #songphoto>ul{
+    width:300px;
+    height: 250px;
+
+}
+#songlist #songphoto>ul>li{
+    width:95px;
+    height:125px;
+    /*background: aquamarine;*/
+    float:left;
+   margin-right:5px;
+    margin-top:5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+}
+#songlist #songphoto>ul>li>img{
+    width:80px;
+    height: 80px;
+    border-radius: 10px;
+}
+#songlist #songphoto>ul>li>span{
+    display: block;
+    width:100%;
+    height:20px;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+
+#newsong{
+    width:100%;
+    height: 20px;
+    margin-top:30px;
+}
+#newsong>span:nth-child(1){
+    font-size: 14px;
+    font-weight: 900;
+    margin-left:40px
+}
+#newsong>span:nth-child(2){
+    margin-left:20px;
+    color:#ccc;
+    font-weight: 700;
+}
+#newsong>input{
+    display: block;
+    float:right;
+    margin-right:40px;
+    line-height: 20px;
+    border:1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    width:80px;
+    text-align: center;
+}
+#newsong>div{
+    width:300px;
+    height: 100px;
+    margin:20px auto;
+}
+#newsong>div>ul{
+    width:300px;
+    height: 200px;
+}
+#newsong>div>ul>li{
+    width:95px;
+    height:95px;
+    /*background: #000;*/
+    float:left;
+    margin-right:5px;
+    margin-top:5px
+}
+#newsong>div>ul>li>img{
+    width:100%;
+    height: 100%;
+    border-radius: 5px;
+}
+#newsong>div>ul>li>span{
+    font-size: 10px;
+}
+
+
+
+
+#choose{
+    width:100%;
+    height:20px;
+    /*background: #000;*/
+    float:left;
+    margin-top:60px;
+    border-bottom: 1px solid #ccc;
+}
+#choose>div{
+    width:300px;
+    height:200px;
+    /*background: #9a6e3a;*/
+    margin:20px auto;
+    border-radius: 10px;
+    margin-top:30px
+}
+#choose>span:nth-child(1){
+    color:#000;
+    font-size: 14px;
+    font-weight: 900;
+}
+#choose>span:nth-child(2){
+    color:#000;
+    float: right;
+    margin-right: 20px;
+}
+#choose>input{
+    display: block;
+    margin:0 auto
+}
+#choose>div>img{
+    width:100%;
+    height:80%;
+    position: relative;
+    border-radius: 10px;
+    /*margin-top:35px;*/
+}
+#choose>div>a>i{
+    position: absolute;
+    z-index: 10;
+    left: 167px;
+    font-size: 40px;
+    line-height: 160px;
+    color:#c3c3c3;
+}
+#choose>div>span{
+    height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 900;
+    display: block;
+    background:#f0f0f0;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    margin-top:10px;
+    border-radius: 5px;
+}
+#choose>div #comment{
+    width:100%;
+    height: 30px;
+}
+#choose>div #comment>span:nth-child(2){
+    margin-left: 30px;
+}
+#choose>div #comment .iconfont{
+    line-height: 30px;
+    color:red
+}
+/*#listen{*/
+/*    width:100%;*/
+/*    height: 200px;*/
+/*    transform: translateY(233px);*/
+/*}*/
+/*#listen>span{*/
+/*    float: left;*/
+/*}*/

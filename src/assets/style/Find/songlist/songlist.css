@@ -1,0 +1,43 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{border: none;vertical-align: middle;}
+html,body{
+    height: 100%;
+}
+/*html{*/
+/*    font-size: 26.67vw;*/
+/*}*/
+body {
+    display: flex;
+    flex-direction: column;
+    /*font-size: .16rem;*/
+}
+#top{
+    width:100%;
+    height: 40px;
+    /*background: #ccc;*/
+    text-align: center;
+}
+#top .iconfont{
+    font-size: 20px;
+    line-height: 40px;
+    float: left;
+}
+#top>span:nth-child(2){
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 40px;
+}
+#songrecommend{
+    width:100%;
+    height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+#songrecommend a{
+    margin-right: 16px;
+    line-height: 30px;
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*justify-content: space-around;*/
+}

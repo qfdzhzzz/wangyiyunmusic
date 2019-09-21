@@ -1,0 +1,49 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{border: none;vertical-align: middle;}
+html,body{
+    height: 100%;
+}
+#main>p{
+    width:50px;
+    height: 30px;
+    /*background: #f00;*/
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 30px;
+    margin-left: 10px;
+    transform: translate(10px,20px);
+
+}
+
+#main #rank{
+    width:100%;
+    height: 100px;
+    margin-top:30px;
+}
+#main #rank>img{
+    width:110px;
+    height: 110px;
+    float: left;
+    position: relative;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+#main #rank>p{
+    font-size: 16px;
+    width:250px;
+    height: 20px;
+    float: right;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    margin-top:20px;
+    text-shadow: 1px 1px 1px  #df5000;
+}
+#main #rank #intro{
+    color:#fff;
+    width:100px;
+    position: absolute;
+    transform: translate(20px,70px);
+}
