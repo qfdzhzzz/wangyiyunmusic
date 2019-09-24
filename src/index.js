@@ -13,11 +13,11 @@ import{
 }from "react-redux"
 import store from "./store"
 axios.interceptors.request.use(config=>{
-    // config.url = "/lagou"+config.url;
+    // config.url = "/wangyiyun"+config.url;
     return config;
 })
 axios.interceptors.response.use(({data})=>{
-    return data;
+    return data
 })
 
 

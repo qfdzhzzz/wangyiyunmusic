@@ -6,6 +6,6 @@ export default function(state = initState,{type,payload}){
         console.log(4444,payload);
         state.newdishList=payload
     }
-    console.log(4444,state)
+    // console.log(4444,state)
     return state;
 }

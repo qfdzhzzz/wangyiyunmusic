@@ -3,6 +3,11 @@ import  "../../assets/iconfont/findlogo/font2/iconfont.css"
 import "../../assets/style/Find/songlist/ranklist.css"
 import {connect} from "react-redux"
 import axios from "axios";
+import {
+    NavLink,
+    Route,
+    BrowserRouter as Router
+} from "react-router-dom"
  class RankList extends React.Component{
     render(){
         const {rankList,getrankList}=this.props;
@@ -18,14 +23,14 @@ import axios from "axios";
                 <div>
                 {
                     rankList.map(v=>(
-                         // console.log(v.tracks[0].first),
+                        <NavLink to={"/activesonglist/"+v.id}>
                         <div id = "rank">
                             <img src={v.coverImgUrl}/>
                             <p>{v.name}</p>
                             <p>{v.description}</p>
                             <p id = "intro">{v.updateFrequency}</p>
-
                         </div>
+                        </NavLink>
                     ))
                 }
                 </div>

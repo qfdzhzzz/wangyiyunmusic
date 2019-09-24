@@ -5,7 +5,11 @@ import {connect} from "react-redux"
 import axios from "axios";
 
 import { Carousel, WingBlank } from 'antd-mobile';
-
+import {
+    NavLink,
+    Route,
+    BrowserRouter as Router
+} from "react-router-dom"
 
 class Recommend extends React.Component{
 
@@ -55,10 +59,13 @@ class Recommend extends React.Component{
                 <ul>
                     {
                         recommendList.map(v=>(
+                            <NavLink to={"/activesonglist/"+v.id} key={v.id}>
                             <li >
                                 <img src={v.coverImgUrl}/>
                                 <span>{v.name}</span>
                             </li>
+                            </NavLink>
+
                         ))
                     }
                 </ul>

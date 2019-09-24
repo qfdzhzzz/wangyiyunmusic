@@ -33,7 +33,7 @@ export default class SongList extends React.Component{
                     <span>歌单广场</span>
                 </div>
 
-                <Router>
+                {/*<Router>*/}
                     <nav id = "songrecommend">
                         <NavLink activeStyle = {{color:"red"}}to = {"/songlist"} exact>推荐</NavLink>
                         <NavLink activeStyle = {{color:"red"}} to = {"/songlist/official"} >官方</NavLink>
@@ -54,7 +54,7 @@ export default class SongList extends React.Component{
                   <Route component={Acg} path={"/songlist/acg"}></Route>
                 <Route component={Softmusic} path={"/songlist/softmusic"}></Route>
                   <Route component={Rock} path={"/songlist/rock"}></Route>
-                </Router>
+                {/*</Router>*/}
 
 
 

@@ -29,6 +29,10 @@ import Radiorank from "./router/Find/Radiorank";
 import Premiumproducts from "./router/Find/Premiumproducts";
 import Musicclassroom from "./router/Find/Musicclassroom";
 
+import Activesonglist from "./router/Find/Activesonglist";
+import Playsonglist from "./router/Find/Playsonglist";
+import Songcomment from "./router/Find/Songcomment";
+
 
  // import GuardRouter from "./router/GuardRouter";
 
@@ -63,6 +67,12 @@ class App extends React.Component {
     <Route  component={Radiorank} path={"/radiorank"} ></Route>
     <Route component={Premiumproducts} path={"/premiumproducts"} ></Route>
     <Route component={Musicclassroom} path={"/musicclassroom"} ></Route>
+
+    <Route component={Activesonglist} path={"/activesonglist/:id"} ></Route>
+
+    <Route component={Playsonglist} path={"/playsonglist"} ></Route>
+
+    <Route component={Songcomment} path={"/songcomment/"} ></Route>
 
               <Route path={"/"} component={Home}></Route>
 

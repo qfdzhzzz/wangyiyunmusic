@@ -1,0 +1,115 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{border: none;vertical-align: middle;}
+html,body{
+    height: 100%;
+}
+#playsong{
+    width:100%;
+
+}
+#playsong #topplay{
+    width:100%;
+    height:613px;
+    background: rgba(0,0,0,.4);
+    position: relative;
+}
+#playsong #topplay #information{
+    width:100%;
+    height:50px;
+    padding-top: 10px;;
+    display: flex;
+    justify-content: space-around;
+}
+#playsong #topplay .iconfont{
+    display: block;
+    float: left;
+    font-size: 30px;
+    line-height: 50px;
+    color:#fff;
+}
+/*#playsong #topplay #information>p{*/
+/*    font-size: 16px;*/
+/*    line-height: 25px;*/
+/*    height: 25px;*/
+/*}*/
+#playsong #topplay #information >div{
+    width: 126px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#playsong #topplay #information >div #p1{
+    font-size: 18px;
+    line-height: 25px;
+    height: 25px;
+    color:#fff;
+    width:126px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    text-align: center;
+
+}
+#playsong #topplay #information >div #p2{
+    font-size: 14px;
+    line-height: 25px;
+    height: 25px;
+    color:#ccc;
+    width:126px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    text-align: center;
+
+}
+
+#playsong #topplay #picture{
+    width: 100%;
+    height: 50px;
+    /*background: #f00;*/
+    position: absolute;
+    bottom: 30px;
+}
+#playsong #topplay #picture >ul{
+    width:100%;
+    height: 100%;
+    display: flex;
+}
+#playsong #topplay #picture>ul>li{
+    width:20%;
+    height: 100%;
+    text-align: center;
+}
+#playsong #topplay #picture>ul>li>a .iconfont{
+    transform: translateX(25px);
+}
+#playsong #topplay #bkpic{
+    display: block;
+    width:200px;
+    height: 200px;
+    margin-left: 90px;
+    margin-top:60px;
+    border-radius: 50%;
+
+
+}
+#playsong #topplay #black #bkpic>img{
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+    transform: translate(-35px,50px);
+}
+#playsong #topplay #black{
+    width:300px;
+    height: 300px;
+    background: rgba(0,0,0,.8);
+    margin-left: 40px;
+    border-radius: 50%;
+}
+#playsong audio{
+    width: 100%;
+}

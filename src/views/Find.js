@@ -53,6 +53,7 @@ import "../assets/iconfont/findlogo/font2/iconfont.css"
         this.props.getsongList();
         this.props.getnewdishList();
         this.props.getmvList();
+        // this.props.getmvurlList();
     }
 
 
@@ -66,7 +67,8 @@ import "../assets/iconfont/findlogo/font2/iconfont.css"
             newdishList,
             // getnewdishList,
             mvList,
-            getmvList
+            getmvList,
+            mvurlList,
         } = this.props;
         // console.log(this.props)
         return (
@@ -132,14 +134,17 @@ import "../assets/iconfont/findlogo/font2/iconfont.css"
                             <ul>
                                 {
                                     songList.map(v=>(
+                                        <NavLink to={"/activesonglist/"+v.id} key={v.id}>
                                         <li >
                                             <img src={v.picUrl}/>
                                             <span>{v.name}</span>
                                         </li>
+                                        </NavLink>
                                     ))
                                 }
                             </ul>
                         </div>
+
                     </div>
 
 
@@ -151,11 +156,13 @@ import "../assets/iconfont/findlogo/font2/iconfont.css"
                     <div>
                         <ul>{
                             newdishList.map((v,i)=>(
+                                <NavLink to={"/activesonglist/"+v.id} key={v.id}>
                                 <li >
                                     <img src={v.blurPicUrl}/>
                                     <span>{v.name}</span>
                                     <span>{v.subType}</span>
                                 </li>
+                                </NavLink>
                             ))
                         }
                         </ul>
@@ -168,13 +175,19 @@ import "../assets/iconfont/findlogo/font2/iconfont.css"
                     <span className = "iconfont" onClick={getmvList.bind(this.props)}> &#xe60f;获取新内容</span>
                     {
                         mvList.map(v=>(
-                            <div >
-                                <a href = "http://vodkgeyttp8.vod.126.net/cloudmusic/cab7/core/b14b/a8740c5017bae42273b0152fe04602c2.mp4?wsSecret=4895972606ffb46511d1e789fa2bd887&wsTime=1568896353"><i className={"iconfont"} >&#xe604;</i></a>
-                                <img src = {v.cover}/>
+                            <div key={v.id}>
+                                <i className={"iconfont"} onClick={()=>{
+                                    this.props.getmvurlList(v.id);
+                                }}>&#xe604;</i>
+
+                                <video controls={"controls"} poster={v.cover} src={mvurlList.url}>
+
+                                </video>
+
                                 <span>{v.name}</span>
                                 <div id = "comment">
                                     <span className = "iconfont" >&#xe618;12</span>
-                                    <span className = "iconfont">&#xe607;144</span>
+                                    <span className = "iconfont">&#xe607;{v.playCount}</span>
                                 </div>
                             </div>
                         ))
@@ -213,14 +226,14 @@ function mapStateToProps(state) {
         newdishList: state.newdish.newdishList,
         offset:state.wangyimv.offset,
         limit:state.wangyimv.limit,
-        mvList:state.wangyimv.mvList
+        mvList:state.wangyimv.mvList,
+        mvurlList:state.mvurl.mvurlList
     }
 }
 function mapDispatchToProps(dispatch) {
     return {
         getbannerList(){
             dispatch(async ()=>{
-
                 const res = await axios.get("http://114.55.253.153:8080/banner?type=1");
                 console.log(res.banners)
                 dispatch({
@@ -259,6 +272,16 @@ function mapDispatchToProps(dispatch) {
                 dispatch({
                     type:"GET_MV_LIST",
                     payload:mvres.data
+                })
+            })
+        },
+        getmvurlList(id){
+            console.log(this)
+            dispatch(async ()=>{
+                const mvurlres = await axios.get("http://114.55.253.153:8080/mv/url?id="+id);
+                dispatch({
+                    type:"GET_MV_URL_LIST",
+                    payload:mvurlres.data
                 })
             })
         }

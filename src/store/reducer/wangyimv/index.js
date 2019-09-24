@@ -9,6 +9,6 @@ export default function(state = initState,{type,payload}){
          // state.limit+=10;
         state.offset++;
     }
-    console.log(5555,state)
+    //console.log(5555,state)
     return state;
 }

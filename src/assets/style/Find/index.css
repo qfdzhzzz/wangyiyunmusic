@@ -96,7 +96,7 @@ body {
     height: 250px;
 
 }
-#songlist #songphoto>ul>li{
+#songlist #songphoto>ul>a>li{
     width:95px;
     height:125px;
     /*background: aquamarine;*/
@@ -110,12 +110,12 @@ body {
     text-align: center;
 
 }
-#songlist #songphoto>ul>li>img{
+#songlist #songphoto>ul>a>li>img{
     width:80px;
     height: 80px;
     border-radius: 10px;
 }
-#songlist #songphoto>ul>li>span{
+#songlist #songphoto>ul>a>li>span{
     display: block;
     width:100%;
     height:20px;
@@ -123,6 +123,7 @@ body {
     overflow: hidden;
     text-overflow:ellipsis;
     white-space: nowrap;
+    color:#000;
 }
 
 
@@ -161,7 +162,7 @@ body {
     width:300px;
     height: 200px;
 }
-#newsong>div>ul>li{
+#newsong>div>ul>a>li{
     width:95px;
     height:95px;
     /*background: #000;*/
@@ -169,13 +170,22 @@ body {
     margin-right:5px;
     margin-top:5px
 }
-#newsong>div>ul>li>img{
+#newsong>div>ul>a>li>img{
     width:100%;
     height: 100%;
     border-radius: 5px;
 }
-#newsong>div>ul>li>span{
+#newsong>div>ul>a>li>span{
+    display: block;
+    color:#000;
     font-size: 10px;
+    width: 95px;
+    height: 13px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    text-align: center;
+
 }
 
 
@@ -207,24 +217,23 @@ body {
     float: right;
     margin-right: 20px;
 }
-#choose>input{
-    display: block;
-    margin:0 auto
-}
-#choose>div>img{
+
+#choose>div>video{
     width:100%;
     height:80%;
     position: relative;
     border-radius: 10px;
+    /*z-index: 10;*/
     /*margin-top:35px;*/
 }
-#choose>div>a>i{
+#choose>div>i{
     position: absolute;
     z-index: 10;
     left: 167px;
     font-size: 40px;
     line-height: 160px;
-    color:#c3c3c3;
+    color:#fff;
+    opacity: .01;
 }
 #choose>div>span{
     height: 20px;
@@ -248,7 +257,7 @@ body {
 }
 #choose>div #comment .iconfont{
     line-height: 30px;
-    color:red
+    color:#666
 }
 /*#listen{*/
 /*    width:100%;*/
