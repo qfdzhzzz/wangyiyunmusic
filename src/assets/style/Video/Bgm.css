@@ -1,0 +1,60 @@
+body{background: #ccc}
+.bgm_card{
+    width: 100%;
+    padding: 10px 10px 0;
+    background: #ffffff;
+    margin-bottom: 10px;
+}
+.bgm_card figure{
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+.bgm_card figure span{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 90px;
+    background: rgba(0,0,0,0);
+    z-index: 99;
+}
+.bgm_card figure img{
+    width: 100%;
+    height: 190px;
+    /*background: pink;*/
+    border-radius: 10px;
+}
+.bgm_card figure video{
+    width: 100%;
+    height: 190px;
+    /*background: pink;*/
+    border-radius: 10px;
+}
+.bgm_card figure figcaption {
+    line-height: 50px;
+    border-bottom: 1px solid #ccc;
+}
+.bgm_title{
+    width: 100%;
+}
+.bgm_title p {
+    overflow: hidden;
+    line-height: 50px;
+}
+.bgm_img {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: red;
+    border-radius: 50%;
+    float: left;
+    margin: 10px;
+}
+.bgm_name{
+    float: left;
+}
+.bgm_icon{
+    float: right;
+}

@@ -1,0 +1,11 @@
+.choice{
+    height: 45px;
+    line-height: 45px;
+    font-size: 12px;
+}
+.choice p{
+    float: left;
+}
+.wraps{
+    margin-top: 100px;
+}

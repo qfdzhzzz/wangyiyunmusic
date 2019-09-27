@@ -1,0 +1,59 @@
+
+.anchor{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+}
+
+.star {
+    height: 100px;
+    width: 48%;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    margin-left: 5px;
+    margin-top: 8px;
+    background: #ffffff;
+}
+.star p{
+    line-height: 20px;
+    font-size: 14px;
+    padding: 10px 0 0 15px ;
+}
+.look_img {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: red;
+    border-radius: 50%;
+    float: left;
+    margin: 8px;
+}
+
+
+
+
+
+.follow{
+    height: 100px;
+    width: 48%;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-top: 8px;
+}
+.follow p{
+    line-height: 20px;
+    font-size: 14px;
+    padding: 10px 0 10px 15px ;
+}
+
+
+
+
+
+
+.childnav{
+    display: flex;
+    margin-top: 8px;
+}

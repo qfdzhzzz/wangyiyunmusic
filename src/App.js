@@ -8,7 +8,6 @@ import './App.css';
 // import Video from "./views/Video";
 // import Find from "./views/Find";
 
-
 import Home from "./views/Home"
 import {
   BrowserRouter as Router,
@@ -34,6 +33,12 @@ import Playsonglist from "./router/Find/Playsonglist";
 import Songcomment from "./router/Find/Songcomment";
 
 
+
+
+import  MoreMvs from "./components/Video/Mvs/MoreMvs"
+import MvList from "./components/Video/Mvs/MvList";
+import MvSort from "./components/Video/Mvs/MvSort";
+import FocusAnchor from "./components/Video/Looks/FocusAnchor";
  // import GuardRouter from "./router/GuardRouter";
 
 class App extends React.Component {
@@ -63,16 +68,25 @@ class App extends React.Component {
               <Route component={RadioStation} path={"/radiostation"} ></Route>
               <Route component={LiveShow} path={"/liveshow"} ></Route>
 
-    <Route component={Radioclassification} path={"/radioclassification"} exact></Route>
-    <Route  component={Radiorank} path={"/radiorank"} ></Route>
-    <Route component={Premiumproducts} path={"/premiumproducts"} ></Route>
-    <Route component={Musicclassroom} path={"/musicclassroom"} ></Route>
+            <Route component={Radioclassification} path={"/radioclassification"} exact></Route>
+            <Route  component={Radiorank} path={"/radiorank"} ></Route>
+            <Route component={Premiumproducts} path={"/premiumproducts"} ></Route>
+            <Route component={Musicclassroom} path={"/musicclassroom"} ></Route>
 
-    <Route component={Activesonglist} path={"/activesonglist/:id"} ></Route>
+            <Route component={Activesonglist} path={"/activesonglist/:id"} ></Route>
 
-    <Route component={Playsonglist} path={"/playsonglist"} ></Route>
+            <Route component={Playsonglist} path={"/playsonglist"} ></Route>
 
-    <Route component={Songcomment} path={"/songcomment/"} ></Route>
+            <Route component={Songcomment} path={"/songcomment/"} ></Route>
+
+
+{/*我的*/}
+
+            <Route path={"/focusanchor"}  component={FocusAnchor}/>
+            <Route path={"/moremvs"}  component={MoreMvs}/>
+            <Route path={"/mvlist"}  component={MvList}/>
+            <Route path={"/mvsort"}  component={MvSort}/>
+
 
               <Route path={"/"} component={Home}></Route>
 

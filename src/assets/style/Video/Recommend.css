@@ -1,0 +1,32 @@
+/*.live-re{*/
+    /*height: 2000px;*/
+/*}*/
+.live{
+    display: flex;
+    width:100%;
+    height: 170px;
+    margin-top: 0px;
+    background-color: pink;
+    justify-content:space-evenly;
+    margin-bottom: 10px;
+}
+.live-one{
+    float: left;
+    margin-top:8px;
+    height: 162px;
+    width: 110px;
+    background: #ffffff;
+}
+.live-small{
+    width: 100%;
+    height: 130px;
+    border-radius: 10px;
+    margin:0 auto;
+    background: #a6fbb3;
+}
+.live-one p{
+    font-size: 12px;
+    float: left;
+    margin-top: 3px;
+}
+
